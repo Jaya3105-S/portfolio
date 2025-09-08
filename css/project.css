@@ -83,13 +83,12 @@ body{
 @media (max-width: 470px){
     .box{
     width: 50px;
-    margin-top: 50px;    
+   margin-bottom: 100px;    
+    margin-left: -15px;
 }
 .box img{
     height: 30px;
-    width: 30px;
-    padding: 12px;
-    border-radius: 30px;   
+    width: 30px; 
 }
 .achieve_box div{
     margin-left:65px;

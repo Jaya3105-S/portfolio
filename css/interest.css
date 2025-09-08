@@ -177,6 +177,15 @@ body{
       margin: 10px 0;
       position: relative;
     }
-  
+  .box{
+      width: 60px;
+      margin-bottom: 100px;
+      
+  }
+  .box img{
+    height: 35px;
+    width: 35px;
+      
+}
     
   }
