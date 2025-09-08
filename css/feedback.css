@@ -188,7 +188,7 @@ button:hover{
     }
     .feedback_form{
         margin-left:60px;
-        width: 290px;
+        width: 250px;
         padding: 10px;
         height: 1100px;
         display: flex;
@@ -209,6 +209,6 @@ button:hover{
     }
     .box {
         width: 40px;
-        margin-top: 50px;
+        margin-top: 0px;
     }
 }
