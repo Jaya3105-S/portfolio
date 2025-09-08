@@ -70,25 +70,28 @@ body{
     @media (max-width: 600px) {
         .contact_form{
             margin-left: 100px;
-            width: 450px;
+            width: 400px;
         }
         .contact_form iframe{
-            height: 1000px;
-            width:440px ;
+            height: 800px;
+            width:400px ;
         }
       }
 
-  @media (max-width: 480px) {
+  @media (max-width: 470px) {
     .Head {
       font-size: 1.5em;
     }
+    body{
+        overflow: hidden;
+    }
     .contact_form{
         margin-left: 100px;
-        width: 330px;
+        width: 300px;
     }
     .contact_form iframe{
-        height: 800px;
-        width:330px ;
+        height: 500px;
+        width:300px ;
     
     }
 
