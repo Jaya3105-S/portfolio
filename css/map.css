@@ -59,7 +59,7 @@ body{
     width: 640px;
 }
 
-@media(max-width:768px){
+@media(max-width:600px){
     .native{
         margin-left: 70px;
         margin-top: 50px;

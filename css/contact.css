@@ -15,6 +15,7 @@
 }
 
 body{
+    
     background-image: linear-gradient( 110deg,  rgba(102,51,153,1) 11.2%, rgb(9, 1, 19) 91.1% );
 }
 
@@ -52,39 +53,58 @@ body{
     font-family: "rosewood",sans-serif;
 }
 .contact_form{
-    margin-left: 400px;
+    margin-left: 300px;
     margin-top: 50px;
     border: 2px solid none;
     border-radius: 20px;
     box-shadow: 2px 2px 3px 3px #f8d408;
-    width: 660px;
+    width: 640px;
+    padding:10px;
 }
 .contact_form iframe{
-    height: 1200px;
+    height: 1000px;
     width:640px ;
+    border-radius: 20px;
 }
 
     @media (max-width: 600px) {
         .contact_form{
             margin-left: 100px;
-            width: 550px;
+            width: 450px;
         }
         .contact_form iframe{
             height: 1000px;
-            width:540px ;
+            width:440px ;
         }
       }
 
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     .Head {
       font-size: 1.5em;
     }
     .contact_form{
         margin-left: 100px;
-        width: 350px;
+        width: 330px;
     }
     .contact_form iframe{
-        height: 900px;
-        width:340px ;
+        height: 800px;
+        width:330px ;
+    
     }
+
+    .box{
+   
+    backdrop-filter: blur(4px);
+    width: 50px;
+    border-radius: 40px;  
+    margin-top: 50px;
+   
+}
+.box img{
+    height: 30px;
+    width: 30px;
+     
+}
+
+
   }

@@ -179,7 +179,7 @@ button:hover{
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     
     .Head {
         font-size: 1.5em;

@@ -144,7 +144,7 @@ body{
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .int_con {
       width: 60%;
       height: 400px;
