@@ -139,7 +139,7 @@ a:hover{
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     .list {
         font-size: 1em;
         align-items:center;
@@ -148,17 +148,18 @@ a:hover{
 
     #home_div {
       flex-direction: column;
-      margin-top: 140px;
+      margin-top: 180px;
       width: 80%;
       padding: 15px;
       margin-left:10px;
-      height: 450px;
+      height: 400px;
     }
 
     .my_img {
       width:170px;
       height: auto;
       margin-left: 10px;
+      margin-top: 10px;
     }
 
     .d1 {
