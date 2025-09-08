@@ -144,10 +144,10 @@ body{
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 470px) {
     .int_con {
       width: 60%;
-      height: 400px;
+      height: 410px;
       margin-top: 50px;
       padding: 10px;
       border-radius: 30px;

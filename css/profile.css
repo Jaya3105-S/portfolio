@@ -147,18 +147,12 @@ body{
   }
   
   @media (max-width: 470px) {
-    .table1 {
-      width: 5%;
-      padding: 10px;
-      border-radius: 15px;
-      font-size: 10px;
-  
-    }
-  
+    
     .js_img {
       width: 120px;
       height: 120px;
       margin-left: 50px;
+      margin-top: -30px;
     }
   
     #prg_imgs {
@@ -171,35 +165,28 @@ body{
       font-size: 0.9em;
       padding: 8px;
       margin-top: -50px;
-      margin-left: 50px;
+      margin-left: 60px;
      
     }
     .table1{
         width: 250px;
         height: 500px;
-        padding: 40px;
         margin-left: 60px;
         margin-right: 200px;
-        font-weight: bolder;
-        border: 2px solid;
-        color: white;
-        margin-top: 40px;
-        border-radius: 20px;
-        border-color: #f8d408;
+        border-radius: 15px;
+        font-size: 10px; 
         
     }
      .box{
-   
-    backdrop-filter: blur(4px);
     width: 50px;
-    border-radius: 40px;  
-    position: fixed;  
-    box-shadow: 2px 2px 1px 1px white ;
    
 }
 
 .box img{
     height: 30px;
     width: 30px; 
+}
+table {
+  margin-left: -30px;
 }
   }
