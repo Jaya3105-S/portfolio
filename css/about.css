@@ -1,77 +1,86 @@
 @font-face {
-    font-family:"rosewood" ;
+    font-family: "rosewood";
     src: url(images/RosewoodStd-Regular.otf);
 }
-body{
-    background-image: linear-gradient( 110deg,  rgba(102,51,153,1) 11.2%, rgb(9, 1, 19) 91.1% );
+
+body {
+    background-image: linear-gradient(110deg, rgba(102, 51, 153, 1) 11.2%, rgb(9, 1, 19) 91.1%);
 }
-*{
+
+* {
     margin: 0px;
     padding: 0px;
 }
-.Head{
+
+.Head {
     text-align: center;
     font-weight: bolder;
     color: #f8d408;
     margin-top: 10px;
-    font-family: "rosewood",sans-serif;
+    font-family: "rosewood", sans-serif;
 }
-#svc{
+
+#svc {
     width: 230px;
     height: 250px;
-        
+
 }
-.edu_img{
+
+.edu_img {
     border: 2px solid none;
     height: 420px;
     width: 230px;
     margin-left: 100px;
-    margin-top:80px;
+    margin-top: 80px;
     padding: 30px;
     border-radius: 30px;
-    box-shadow: 1px 1px 3px 3px #FFCC00 ;
+    box-shadow: 1px 1px 3px 3px #FFCC00;
     background-color: #e0e0f0;
 }
-#apsa{
+
+#apsa {
     width: 230px;
     height: 240px;
     padding-top: 45px;
-   
+
 }
-#ssa{
+
+#ssa {
     width: 230px;
     height: 240px;
     padding-top: 55px;
-    
+
 }
 
-.Edu_imgs{
+.Edu_imgs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  
-}
-.imgs h3{
-  
- font-weight: bolder;
- text-align: center;
+
 }
 
-.edu_img:hover{
+.imgs h3 {
+
+    font-weight: bolder;
+    text-align: center;
+}
+
+.edu_img:hover {
     transform: scale(1.1);
     transition: .5s;
 }
-.imgs h2{
-    color:  #FFD700;
+
+.imgs h2 {
+    color: #FFD700;
     padding: 10px;
     margin-top: 50px;
-    margin-left:550px;
+    margin-left: 550px;
     border: 2px solid;
     width: 400px;
     text-align: center;
 }
 
-.summary{
+.summary {
     color: white;
     border: 2px solid none;
     height: 300px;
@@ -80,140 +89,148 @@ body{
     font-size: x-large;
     margin-top: 50px;
     padding: 20px;
-    box-shadow:1px 1px 2px 2px #DADADA;
+    box-shadow: 1px 1px 2px 2px #DADADA;
 
 }
 
 /*menu*/
-.box{
-   
+.box {
+
     backdrop-filter: blur(4px);
     width: 70px;
-    border-radius: 40px;  
-    position: fixed;  
-    box-shadow: 2px 2px 1px 1px white ;
+    border-radius: 40px;
+    position: fixed;
+    box-shadow: 2px 2px 1px 1px white;
     margin-bottom: 80px;
 }
 
-.box img{
+.box img {
     height: 40px;
     width: 40px;
     padding: 12px;
-    border-radius: 30px;   
+    border-radius: 30px;
 }
-.box img:hover{
-    transform: perspective(500px)translate3d(10px, 0,50px);
+
+.box img:hover {
+    transform: perspective(500px)translate3d(10px, 0, 50px);
     transition: .5s;
 }
 
- /* Responsive */
- @media (max-width: 600px) {
+/* Responsive */
+@media (max-width: 600px) {
     .Head {
-      font-size: 2em;
+        font-size: 2em;
     }
 
     .summary {
-      font-size: 1em;
-      margin-left: 100px;
-      width: 450px;
-      height: 200px;
+        font-size: 1em;
+        margin-left: 100px;
+        width: 450px;
+        height: 200px;
     }
 
     .imgs h2 {
-      margin-left: 0;
-      font-size: 1.5em;
-      margin-left:150px;
+        margin-left: 0;
+        font-size: 1.5em;
+        margin-left: 150px;
     }
 
     .box {
-      flex-direction: row;
-      width: auto;
-      bottom: 20px;
-      top: auto;
-      transform: translateX(-20%);
-      border-radius: 20px;
-      background-color: rgba(255, 255, 255, 0.1);
+        flex-direction: row;
+        width: auto;
+        bottom: 20px;
+        top: auto;
+        transform: translateX(-20%);
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
     }
 
-    .edu_img{
+    .edu_img {
         border: 2px solid none;
         height: 340px;
         width: 160px;
         margin-left: 100px;
-        margin-top:80px;
+        margin-top: 80px;
         padding: 30px;
         border-radius: 30px;
-        box-shadow: 1px 1px 3px 3px #FFCC00 ;
+        box-shadow: 1px 1px 3px 3px #FFCC00;
         background-color: #e0e0f0;
-        
+
     }
-    #svc{
+
+    #svc {
         width: 150px;
         height: 150px;
     }
-    #apsa{
+
+    #apsa {
         width: 150px;
         height: 150px;
         padding-top: 45px;
-       
+
     }
-    #ssa{
+
+    #ssa {
         width: 150px;
         height: 150px;
         padding-top: 55px;
-        
+
     }
-    .imgs h3{
+
+    .imgs h3 {
         font-size: 1em;
         font-weight: bolder;
         text-align: center;
-       }
+    }
 
-  }
+}
 
-  @media (max-width: 470px) {
+@media (max-width: 470px) {
     .Head {
-      font-size: 1.5em;
+        font-size: 1.5em;
     }
 
     .edu_img {
-      width: 100%;
-      padding: 15px;
+        width: 100%;
+        padding: 15px;
     }
 
     .summary {
-      font-size: 0.95em;
-      padding: 15px;
-      height: 330px;
-      width: 240px;
+        font-size: 0.95em;
+        padding: 15px;
+        height: 350px;
+        width: 240px;
     }
 
     .box img {
-      height: 30px;
-      width: 30px;
+        height: 30px;
+        width: 30px;
     }
+
     .imgs h2 {
         margin-left: 200px;
         font-size: 1.3em;
-        margin-left:100px;
+        margin-left: 100px;
         width: 200px;
-      }
-      .edu_img{
+    }
+
+    .edu_img {
         border: 2px solid none;
-        height: 340px;
+        height: 370px;
         width: 160px;
         margin-left: 10px;
-        
-        margin-top:80px;
+
+        margin-top: 80px;
         padding: 30px;
         border-radius: 30px;
-        box-shadow: 1px 1px 3px 3px #FFCC00 ;
+        box-shadow: 1px 1px 3px 3px #FFCC00;
         background-color: #e0e0f0;
-        
+
     }
-     
-  }
 
+    .box {
 
-
-
+        width: 50px;
+        margin-top:10px;
+    }
+}
