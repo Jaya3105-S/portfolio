@@ -92,7 +92,10 @@ body{
     border-radius: 30px;   
 }
 .achieve_box div{
-    margin-left: 60px;
+    margin-left: 52px;
     height: 580px;
+}
+.achieve_box img{
+    margin-left: 40px;
 }
 }

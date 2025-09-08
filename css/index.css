@@ -135,7 +135,7 @@ a:hover{
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 470px) {
     .list {
         font-size: 1em;
         align-items:center;
@@ -164,18 +164,9 @@ a:hover{
       font-size: 8px;
      
     }
-
-    .box {
-      flex-direction: row;
-      bottom: 20px;
-      top: auto;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 20px;
+    body{
+      overflow: hidden;
     }
 
-    .box img {
-      height: 30px;
-      width: 30px;
-    }
+    
   }

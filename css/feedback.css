@@ -50,7 +50,6 @@ body{
     grid-template-columns: repeat(2,1fr);
     box-shadow: 2px 2px 3px 3px whitesmoke;
     height: 580px;
-    
     gap: 150px;
     
 }
@@ -124,14 +123,13 @@ button:hover{
     }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .box {
         flex-direction: row;
         width: auto;
         border-radius: 20px;
         top: auto;
         bottom: 20px;
-        
         transform: translateX(-30%);
         padding: 10px 15px;
         background: rgba(255, 255, 255, 0.1);
@@ -178,7 +176,6 @@ button:hover{
    
 }
 
-
 @media (max-width: 470px) {
     
     .Head {
@@ -190,10 +187,10 @@ button:hover{
         width: 30px;
     }
     .feedback_form{
-        margin-left:70px;
-        width: 300px;
+        margin-left:60px;
+        width: 290px;
         padding: 10px;
-        height: 1200px;
+        height: 1100px;
         display: flex;
         flex-wrap: wrap;
       
@@ -201,9 +198,7 @@ button:hover{
     .box1, .box2{
         color:white;
         font-weight: bolder;
-        margin-left: 30px;
-      
-       
+        margin-left: 0px;  
     }
     .box2{
         margin-top: -180px;
@@ -214,6 +209,6 @@ button:hover{
     }
     .box {
         width: 40px;
-        margin-bottom: 50px;
+        margin-top: 50px;
     }
 }

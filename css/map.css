@@ -88,11 +88,11 @@ body{
 @media(max-width:470px){
     .native iframe{
         height: 450px;
-        width: 300px;
+        width: 270px;
        
     }    
     .native{
-        width: 310px;
+        width: 280px;
     }
     .box{
     width: 50px;  
