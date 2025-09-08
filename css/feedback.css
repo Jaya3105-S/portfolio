@@ -179,7 +179,7 @@ button:hover{
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 470px) {
     
     .Head {
         font-size: 1.5em;
@@ -190,7 +190,7 @@ button:hover{
         width: 30px;
     }
     .feedback_form{
-        margin-left:100px;
+        margin-left:70px;
         width: 300px;
         padding: 10px;
         height: 1200px;
@@ -211,5 +211,9 @@ button:hover{
     .btn1{
         margin-top: 20px;
         margin-left: 0px;
+    }
+    .box {
+        width: 40px;
+        margin-bottom: 50px;
     }
 }

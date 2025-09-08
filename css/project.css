@@ -83,8 +83,7 @@ body{
 @media (max-width: 470px){
     .box{
     width: 50px;
-    
-    
+    margin-top: 50px;    
 }
 .box img{
     height: 30px;
@@ -94,6 +93,6 @@ body{
 }
 .achieve_box div{
     margin-left: 60px;
-    height: 550px;
+    height: 580px;
 }
 }
