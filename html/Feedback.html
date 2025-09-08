@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="icon" href="../images/feedback.png">
+    <link rel="stylesheet" href="../css/feedback.css">
+    
+    </head>
+<body class="feedback_bg">
+            
+       <div class="menu">
+            <h1 class="Head"> Feedback</h1>
+            <div class="box">
+            <div><a href="../index.html"><img src="../images/house.png" alt="home" title="Home"></a></div>
+            <div><a href="About.html"><img src="../images/bio.png" alt="About" title="About"></a></div>
+            <div><a href="Profile1.html"><img src="../images/profile.png" alt="Profile" title="Profile"></a></div>
+            <div><a href="Achievement.html"><img src="../images/new-project.png" alt="Projects" title="Projects"></a></div>
+            <div><a href="Interest.html"><img src="../images/interest.png" alt="interest" title="Interest"></a></div>
+            <div><a href="Calendar.html"><img src="../images/schedule.png" alt="Calendar" title="Calendar"></a></div>
+            <div><a href="Contact.html"><img src="../images/communicate.png" alt="Contact" title="Contact"></a></div>
+            <div><a href="map.html"><img src="../images/google-maps.png" alt="map" title="Map"></a></div>
+        </div>
+
+        <div class="feedback_form" >
+            <div class="box1">
+                <table>
+                        <tr><td> FIRST NAME :<sup>*</sup>
+                        </td></tr>
+                        <tr><td><input type="text"></td> </tr>
+                        <tr> <td> LAST NAME :<sup>*</sup></td></tr>
+                        <tr><td><input type="text"></td></tr>
+                        <tr><td>GMAIL :<sup>*</sup></td></tr>
+                        <tr><td><input type="text"></td></tr>
+                        <tr><td>GENDER :<sup>*</sup></td></tr>
+                        <tr><td><input type="radio" name="gender">Male
+                                <input type="radio" name="gender">Female
+                        </td></tr>
+                        <tr><td>ADDRESS :<sup>*</sup></td></tr>
+                        <tr><td><textarea name="address" ></textarea></td></tr>
+                        <tr><td>COUNTRY :<sup>*</sup></td></tr>
+                        <tr><td><input type="text"></td></tr>
+                        
+                </table> </div>
+                <div class="box2">
+                <table>
+                    <tr><td>STATE :<sup>*</sup></td></tr>
+                        <tr><td><input type="text"></td></tr>
+                   
+                    <tr><td>DISTRICT :<sup>*</sup></td></tr>
+                    <tr><td><input type="text"></td></tr>
+                    <tr><td>PIN CODE:<sup>*</sup></td></tr>
+                    <tr><td><input type="text"></td></tr>
+                    <tr><td>I like UI of Web page :<sup>*</sup></td></tr>
+                    <tr><td>
+                        <div class="question" id="question1">
+                            <div class="stars"></div>
+                          </div></td></tr>
+                          <tr><td>I Like Content of Webpage :<sup>*</sup></td></tr>
+                          <tr><td><div class="question" id="question2">
+                            <div class="stars"></div>
+                          </div></td></tr>
+                </table>
+                <div class="button">
+                    <button class="btn" >Submit</button>
+                    <button class="btn1" >Reset</button>
+                </div>
+
+            </div>     
+        <script>
+     
+  function createStarRating(containerId) {
+    const container = document.querySelector(`#${containerId} .stars`);
+    let selectedRating = 0;
+
+    for (let i = 1; i <= 5; i++) {
+      const star = document.createElement('span');
+      star.classList.add('star');
+      star.innerHTML = '★';
+      star.dataset.value = i;
+
+      star.addEventListener('mouseover', () => {
+        highlightStars(container, i);
+      });
+
+      star.addEventListener('mouseout', () => {
+        highlightStars(container, selectedRating);
+      });
+
+      star.addEventListener('click', () => {
+        selectedRating = i;
+        highlightStars(container, selectedRating);
+        console.log(`Rating for ${containerId}: ${selectedRating}`);
+      });
+
+      container.appendChild(star);
+    }
+  }
+
+  function highlightStars(container, rating) {
+    const stars = container.querySelectorAll('.star');
+    stars.forEach(star => {
+      star.classList.toggle('hovered', star.dataset.value <= rating);
+      star.classList.toggle('selected', star.dataset.value <= rating);
+    });
+  }
+
+  createStarRating('question1');
+  createStarRating('question2');
+
+
+
+
+
+    // 💬 VALIDATION CODE WITH ERROR MESSAGES
+    function validateForm() {
+    let isValid = true;
+
+    // Clear previous error messages
+    document.querySelectorAll('.error-message').forEach(el => el.remove());
+
+    const inputs = document.querySelectorAll('.box1 input, .box2 input');
+    const address = document.querySelector('textarea[name="address"]');
+    const gender = document.querySelectorAll('input[name="gender"]');
+
+    inputs.forEach((input, index) => {
+      if (input.value.trim() === "") {
+        showError(input, "This field is required.");
+        isValid = false;
+      } else if (index === 2) { // Gmail input
+        const gmailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!gmailPattern.test(input.value.trim())) {
+          showError(input, "Enter a valid Gmail address.");
+          isValid = false;
+        }
+      }
+    });
+
+    if (address.value.trim() === "") {
+      showError(address, "Address is required.");
+      isValid = false;
+    }
+
+    let genderSelected = false;
+    for (let g of gender) {
+      if (g.checked) {
+        genderSelected = true;
+        break;
+      }
+    }
+    if (!genderSelected) {
+      const genderGroup = gender[0].parentElement;
+      showError(genderGroup, "Please select your gender.");
+      isValid = false;
+    }
+
+    if (isValid) {
+      alert("Your Feedback is Successfully submitted!");
+    }
+
+    return isValid;
+  }
+
+  function showError(element, message) {
+    const error = document.createElement('div');
+    error.className = 'error-message';
+    error.style.color = 'red';
+    error.style.fontSize = '12px';
+    error.style.marginTop = '5px';
+    error.innerText = message;
+    element.parentElement.appendChild(error);
+  }
+
+  // Attach validation to Submit button
+  document.querySelector('.btn').addEventListener('click', function (e) {
+    if (!validateForm()) {
+      e.preventDefault(); // Stop form from submitting if invalid
+    }
+  });
+
+  // Reset button clears everything
+  document.querySelector('.btn1').addEventListener('click', function () {
+    document.querySelectorAll('input, textarea').forEach(el => {
+      if (el.type === "radio") {
+        el.checked = false;
+      } else {
+        el.value = '';
+      }
+    });
+    document.querySelectorAll('.star').forEach(star => {
+      star.classList.remove('selected', 'hovered');
+    });
+    document.querySelectorAll('.error-message').forEach(el => el.remove());
+  });
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Head{
+    text-align: center;
+    font-weight: bolder;
+    color: #f8d408;
+    margin-top: 10px;
+    font-family: "rosewood",sans-serif;
+}
+@font-face {
+    font-family:"rosewood" ;
+    src: url(css/RosewoodStd-Regular.otf);
+}
+
+
+body{
+    background-image: linear-gradient( 110deg,  rgba(102,51,153,1) 11.2%, rgb(9, 1, 19) 91.1% );
+}
+
+/*menu*/
+.box{
+   
+    backdrop-filter: blur(4px);
+    width: 70px;
+    border-radius: 40px;  
+    position: fixed;  
+    box-shadow: 2px 2px 1px 1px white ;
+   
+}
+
+.box img{
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+    border-radius: 30px;   
+}
+.box img:hover{
+    transform: perspective(500px)translate3d(10px, 0,50px);
+    transition: .5s;
+}
+
+/* Calendar*/ 
+.calendar iframe{
+    width: 800px;
+    height: 550px;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+.cal_menu{
+    display:flex;
+    
+}
+@media (max-width:600px){
+    .calendar{
+        margin-left: 100px;
+    }
+    .calendar iframe{
+        width: 500px;
+        height: 500px;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    }
+    
+    @media (max-width:400px){
+        .calendar{
+            margin-left: 100px;
+        }
+        .calendar iframe{
+            width: 350px;
+            height: 450px;
+        }
+        
+    }
