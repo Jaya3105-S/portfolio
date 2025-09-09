@@ -68,7 +68,7 @@ body{
     @media (max-width:470px){
         .calendar{
             margin-left: 70px;
-            margin-top: 20px;
+            margin-top: 40px;
            
         }
         .calendar iframe{
@@ -78,7 +78,7 @@ body{
         }
         .box{
     width: 50px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .box img{
