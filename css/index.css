@@ -139,6 +139,7 @@ a:hover{
     .list {
         font-size: 1em;
         align-items:center;
+        justify-content: space-around;
         
       }
 
