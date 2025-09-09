@@ -208,6 +208,7 @@ button:hover{
         margin-left: 0px;
     }
     .box {
-        width: 40px;   
+        width: 40px;
+        margin-bottom: 80px;   
     }
 }
